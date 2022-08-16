@@ -1,6 +1,0 @@
-# PACKAGES TO INSTALL ON SERVER
-
-streamlit
-pandas
-numpy
-sklearn
