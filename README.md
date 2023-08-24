@@ -46,8 +46,7 @@ The **IPL Win Predictor** is implemented as a Streamlit web application. It util
 
 ## Web App
 
-Access the deployed Streamlit web app [here](https://ipl-win-predictor.streamlit.app/).<br>
-If the above app is non-responsive, copy the following link and paste on another window: https://chat-analysis-whatsapp.streamlit.app/
+Access the deployed Streamlit web app [here](https://ipl-win-predictor.streamlit.app/).
 
 ## Portfolio
 
