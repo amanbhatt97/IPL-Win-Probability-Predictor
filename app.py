@@ -1,9 +1,18 @@
-# Importing libraries
+#----- dependencies -----#
 import streamlit as st
 import pickle
 import pandas as pd
+import os
 
-# all team names
+
+# get the parent directory path
+parent_directory = os.getcwd()
+
+# paths
+model_path = os.path.join(parent_directory, 'model') 
+
+
+#----- all team names -----#
 teams = ['Sunrisers Hyderabad',
          'Mumbai Indians',
          'Royal Challengers Bangalore',
@@ -13,7 +22,8 @@ teams = ['Sunrisers Hyderabad',
          'Rajasthan Royals',
          'Delhi Capitals']
 
-# all cities names
+
+#----- all cities names -----#
 cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
            'Chandigarh', 'Jaipur', 'Chennai', 'Cape Town', 'Port Elizabeth',
            'Durban', 'Centurion', 'East London', 'Johannesburg', 'Kimberley',
@@ -21,10 +31,12 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
            'Visakhapatnam', 'Pune', 'Raipur', 'Ranchi', 'Abu Dhabi',
            'Sharjah', 'Mohali', 'Bengaluru']
 
-# loading pickle file in right binary mode
-pipe = pickle.load(open('pipe.pkl','rb'))
 
-# Display Options
+# loading pickle file in right binary mode
+pipe = pickle.load(open(os.path.join(model_path, 'pipe.pkl'),'rb'))
+
+
+#----- front-end -----#
 
 # display title
 st.title('IPL Win Predictor')
@@ -48,13 +60,14 @@ target = st.number_input('Target', step = 1)
 col3,col4,col5 = st.columns(3)
 
 with col3:
-    score = st.number_input('Score', step = 1)
+    score = st.number_input('Cuurent Score', step = 1)
 with col4:
     overs = st.number_input('Overs completed', step = 1)
 with col5:
     wickets = st.number_input('Wickets out', step = 1)
 
-# make a button for 'Predict Probability'
+
+#----- make a button for 'Predict Probability' ------#
 if st.button('Predict Probability'):
     runs_left = target - score
     balls_left = 120 - (overs * 6)
