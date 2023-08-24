@@ -46,7 +46,7 @@ The **IPL Win Predictor** is implemented as a Streamlit web application. It util
 
 ## Web App
 
-Access the deployed Streamlit web app [here](https://ipl-win-predictor.streamlit.app/).
+Access the deployed Streamlit web app [here](https://ipl-win-prediction.streamlit.app/).
 
 ## Portfolio
 
