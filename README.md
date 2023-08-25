@@ -24,12 +24,12 @@ The **IPL Win Predictor** is implemented as a Streamlit web application. It util
 - Streamlit: Interactive web application framework
 - Scikit-learn: Machine learning library for model loading
 - Pandas: Data manipulation library
-- Pickle: For loading the pre-trained model
+- Joblib: For saving and loading the pre-trained model
 - Git: Version control and collaboration
 
 ## Installation
 
-1. Clone this repository to your local machine: git clone https://github.com/amanbhatt97/IPL-Win-Probability-Predictor.git
+1. Clone this repository to your local machine: 'git clone https://github.com/amanbhatt97/IPL-Win-Probability-Predictor.git'
 2. Install the required dependencies using `pip`: pip install -r requirements.txt
 
  ## Usage
