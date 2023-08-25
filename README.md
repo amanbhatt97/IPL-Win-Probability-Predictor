@@ -40,10 +40,13 @@ The **IPL Win Predictor** is implemented as a Streamlit web application. It util
 
 ## Project Structure
 
-- `app.py`: Streamlit app code.
+- `app.py`: Directory containing the datasets.
 - `model/`: Directory containing the pre-trained model and necessary data.
-- `requirements.txt`: List of required Python packages and their versions.
 - `README.md`: Overview of the project (you're reading it right now!).
+- `ipl_analysis`: Notebook containing all the analysis and model training.
+- `app.py`: Streamlit app code.
+- `requirements.txt`: List of required Python packages and their versions.
+
 
 ## Portfolio
 
@@ -54,4 +57,4 @@ Check out my portfolio [here](https://amanbhatt97.github.io/portfolio/).
 Feel free to reach out to me if you have any questions or feedback. You can find me on:
 
 - Email: amanbhatt.1997.ab@gmail.com
-- LinkedIn: [Aman Bhatt](https://www.linkedin.com/in/amanbhatt1997/)
+- LinkedIn: [amanbhatt97](https://www.linkedin.com/in/amanbhatt1997/)
