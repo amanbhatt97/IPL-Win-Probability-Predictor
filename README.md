@@ -29,7 +29,7 @@ The **IPL Win Predictor** is implemented as a Streamlit web application. It util
 
 ## Installation
 
-1. Clone this repository to your local machine: 'git clone https://github.com/amanbhatt97/IPL-Win-Probability-Predictor.git'
+1. Clone this repository to your local machine: `git clone https://github.com/amanbhatt97/IPL-Win-Probability-Predictor.git`
 2. Install the required dependencies using `pip`: pip install -r requirements.txt
 
  ## Usage
