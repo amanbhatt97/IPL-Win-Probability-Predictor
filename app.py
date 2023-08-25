@@ -1,9 +1,12 @@
 #----- dependencies -----#
 import streamlit as st
-import pickle
+import pickle, joblib
 import pandas as pd
-import os
+import os, sys
 
+
+# sys.path.append('..')
+sys.path.append(os.path.join(os.path.dirname(__file__), '..')) 
 
 # get the parent directory path
 parent_directory = os.getcwd()
@@ -33,8 +36,8 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
 
 
 # loading pickle file in right binary mode
-pipe = pickle.load(open(os.path.join(model_path, 'pipe.pkl'),'rb'))
-
+pipe = joblib.load(os.path.join(model_path, 'pipe.pkl'))
+# print(os.path.join(model_path, 'pipe.pkl'))
 
 #----- front-end -----#
 
